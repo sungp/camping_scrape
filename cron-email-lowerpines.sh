@@ -10,8 +10,8 @@ sites=`$BASE_DIR/scraper.py`
 
 if [ ! -z "$sites" ] ; then
     # We've got a site available
-    echo "$sites"  | Mail -s "Lower Pines Sites Are Available!!! $DATE" -c spark0820@yahoo.com sungp2k@gmail.com 
+    echo "$sites"  | mutt -s "Lower Pines Sites Are Available!!! $DATE AWS" sungp2k@gmail.com 
 else
-    echo "No Sites Available"  | Mail -s "No Lower Pines Sites Are Available $DATE" -c spark0820@yahoo.com sungp2k@gmail.com 
+    echo "No Sites Available"  | mutt -s "No Lower Pines Sites Are Available $DATE AWS" sungp2k@gmail.com 
     #echo "No Sites Available"  
 fi

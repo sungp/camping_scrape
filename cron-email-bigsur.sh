@@ -4,8 +4,8 @@ PATH="/usr/local/bin:${PATH}"
 BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export CAMPGROUND="http://www.reserveamerica.com/camping/pfeiffer-big-sur-sp/r/campgroundDetails.do?contractCode=CA&parkId=120068"
 export LENGTH=2
-#export DATE="10/19/2017"
-export DATE="07/01/2017"
+#export DATE="07/01/2017"
+export DATE="05/27/2019"
 sites=`$BASE_DIR/scraper.py`
 
 if [ ! -z "$sites" ] ; then
